@@ -161,6 +161,7 @@ ZEND_BEGIN_MODULE_GLOBALS(xdebug)
 	zend_bool     auto_trace;
 	zend_bool     trace_enable_trigger;
 	char         *trace_enable_trigger_value;
+	char         *trace_enable_trigger_name;
 	char         *trace_output_dir;
 	char         *trace_output_name;
 	long          trace_options;
@@ -290,7 +291,7 @@ ZEND_END_MODULE_GLOBALS(xdebug)
 #else
 #define XG(v) (xdebug_globals.v)
 #endif
-	
+
 #endif
 
 
